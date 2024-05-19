@@ -1,0 +1,12 @@
+*.out 
+log.txt 
+*.code-workspace 
+.vscode
+*.dSYM
+lex.yy.c
+lex.yy.h
+y.tab.c
+y.tab.h
+tree_parser_*
+*.o
+*.DS_Store
