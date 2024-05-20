@@ -1,0 +1,22 @@
+{
+    "origin": {
+        "check": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$",
+        "generator": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$"
+    },
+    "all": {
+        "check": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$",
+        "generator": "^\\*{8,9}$"
+    },
+    "fake_id_generator": {
+        "check": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$",
+        "generator": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$"
+    },
+    "prefix_preserved": {
+        "check": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$",
+        "generator": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\*{7}$"
+    },
+    "prefix_preserve_rule": {
+        "check": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$",
+        "generator": "^((\\s?[A-Za-z])|([A-Za-z]{2}))\\d{6}(([0−9aA])|([0-9aA]))$"
+    }
+}

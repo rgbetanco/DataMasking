@@ -1,0 +1,10 @@
+{
+    "masking_middle_word": {
+        "check": "^(?<firstword>\\D)(\\D*)(?<lastword>\\D)$",
+        "generator": "^${firstword}\\○+${lastword}$"
+    },
+    "remain_first_word": {
+        "check": "^(?<firstword>\\D)(\\D{2,3})$",
+        "generator": "^$1\\○{2,3}$"
+    }
+}

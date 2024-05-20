@@ -1,0 +1,18 @@
+{
+    "origin": {
+        "check": "^(([a-zA-Z])[a-zA-Z,'-]+)\\s*(([a-zA-Z])[a-zA-Z,' -]+)* (([a-zA-Z])[a-zA-Z,'-]+)$",
+        "generator": "^(([a-zA-Z])[a-zA-Z,'-]+)\\s*(([a-zA-Z])[a-zA-Z,' -]+)* (([a-zA-Z])[a-zA-Z,'-]+)$"
+    },
+    "all": {
+        "check": "^(([a-zA-Z])[a-zA-Z,'-]+)\\s*(([a-zA-Z])[a-zA-Z,' -]+)* (([a-zA-Z])[a-zA-Z,'-]+)$",
+        "generator": "^\\*+$"
+    },
+    "prefix_preserved": {
+        "check": "^(([a-zA-Z])[a-zA-Z,'-]+)\\s*(([a-zA-Z])[a-zA-Z,' -]+)* (([a-zA-Z])[a-zA-Z,'-]+)$",
+        "generator": "^$2\\*+\\s$4\\*+\\s$6\\*+$"
+    },
+    "gender_preserved": {
+        "check": "^(([a-zA-Z])[a-zA-Z,'-]+)\\s*(([a-zA-Z])[a-zA-Z,' -]+)* (([a-zA-Z])[a-zA-Z,'-]+)$",
+        "generator": "^$1\\s\\*+\\s\\*+$"
+    }
+}

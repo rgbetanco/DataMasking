@@ -1,0 +1,18 @@
+{
+    "origin": {
+        "check": "^(\\d{1})(\\d{7})$",
+        "generator": "^(\\d{1})(\\d{7})$"
+    },
+    "all": {
+        "check": "^(\\d{1})(\\d{7})$",
+        "generator": "^\\*{8}$"
+    },
+    "landline_preserved_ms": {
+        "check": "^(\\d{1})(\\d{7})$",
+        "generator": "^$1\\*{7}$"
+    },
+    "landline_preserved_fpr": {
+        "check": "^(\\d{1})(\\d{7})$",
+        "generator": "^$1\\d{7}$"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "origin": {
+        "check": "^([A-Z])(1|2)(\\d{7})(\\d{1})$",
+        "generator": "^([A-Z])(1|2)(\\d{7})(\\d{1})$"
+    },
+    "all": {
+        "check": "^([A-Z])(1|2)(\\d{7})(\\d{1})$",
+        "generator": "^\\*{10}$"
+    },
+    "random_generator": {
+        "check": "^([A-Z])(1|2)(\\d{7})(\\d{1})$",
+        "generator": "^([A-Z])(1|2)(\\d{7})(\\d{1})$"
+    },
+    "remain_gender": {
+        "check": "^([A-Z])(1|2)(\\d{7})(\\d{1})$",
+        "generator": "^([A-Z])(1|2)(\\d{7})(\\d{1})$"
+    },
+    "remain_gender_non_policy_ms": {
+        "check": "^([A-Z])(1|2)(\\d{7})(\\d{1})$",
+        "generator": "^\\*{1}$2\\*{8}$"
+    },
+    "remain_gender_non_policy_fpr": {
+        "check": "^([A-Z])(1|2)(\\d{7})(\\d{1})$",
+        "generator": "^[A-Z]$2\\d{8}$"
+    },
+    "remain_location": {
+        "check": "^([A-Z])(1|2)(\\d{7})(\\d{1})$",
+        "generator": "^$1$2\\d{8}$"
+    }
+}
