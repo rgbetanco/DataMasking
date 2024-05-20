@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-04-28" view-index="0" gantt-divider-location="582" resource-divider-location="681" version="2.8.10" locale="zh_TW">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="名稱" width="279" order="0"/>
+        <field id="tpd4" name="起始日期" width="147" order="1"/>
+        <field id="tpd5" name="結束日期" width="152" order="2"/>
+        <option id="color.recent"><![CDATA[#ff0000 #ffcc33 #ffcc00 #ff6666 #000000 #ff7300 #eeeeee #00cc66 #9900ff #0000ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="姓名" width="339" order="0"/>
+        <field id="1" name="預設角色" width="323" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2018" month="6" date="18" type="HOLIDAY"><![CDATA[DuanWu]]></date>
+        <date year="2018" month="9" date="24" type="HOLIDAY"><![CDATA[ZhongQiu]]></date>
+        <date year="2018" month="10" date="10" type="HOLIDAY"/>
+        <date year="2018" month="12" date="31" type="HOLIDAY"/>
+        <date year="2019" month="1" date="1" type="HOLIDAY"/>
+        <date year="2019" month="2" date="4" type="HOLIDAY"/>
+        <date year="2019" month="2" date="5" type="HOLIDAY"/>
+        <date year="2019" month="2" date="6" type="HOLIDAY"/>
+        <date year="2019" month="2" date="7" type="HOLIDAY"/>
+        <date year="2019" month="2" date="8" type="HOLIDAY"/>
+        <date year="2019" month="2" date="28" type="HOLIDAY"/>
+        <date year="2019" month="3" date="1" type="HOLIDAY"/>
+        <date year="2019" month="4" date="4" type="HOLIDAY"/>
+        <date year="2019" month="4" date="5" type="HOLIDAY"/>
+        <date year="2019" month="6" date="7" type="HOLIDAY"/>
+        <date year="2019" month="9" date="13" type="HOLIDAY"/>
+        <date year="2019" month="10" date="10" type="HOLIDAY"/>
+        <date year="2019" month="10" date="11" type="HOLIDAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="509" name="Data Masking Program" meeting="false" start="2019-04-24" duration="58" complete="66" expand="true">
+            <task id="602" name="Integrated Testing" color="#ffffcc" meeting="false" start="2019-07-09" duration="5" complete="0" thirdDate="2019-04-15" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[TBD]]></notes>
+            </task>
+            <task id="589" name="Output Generator" color="#000000" meeting="false" start="2019-07-02" duration="5" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <depend id="602" type="2" difference="0" hardness="Strong"/>
+                <task id="587" name="Modules intergrations--RE/Generatior/Look-Up/PHP" color="#8cb6ce" meeting="false" start="2019-07-02" duration="5" complete="0" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="572" name="Regular expression" meeting="false" start="2019-05-10" duration="3" complete="100" expand="false">
+                <depend id="589" type="2" difference="0" hardness="Strong"/>
+                <task id="573" name="RE2 Rules validatior" color="#8cb6ce" meeting="false" start="2019-05-10" duration="3" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="580" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="569" name="Generator" meeting="false" start="2019-05-02" duration="32" complete="60" expand="true">
+                <depend id="589" type="2" difference="0" hardness="Strong"/>
+                <task id="579" name="Source code review" color="#8cb6ce" meeting="false" start="2019-05-02" duration="11" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
+                <task id="580" name="Tree structure building" color="#ff0000" meeting="false" start="2019-05-15" duration="21" complete="50" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
+                <task id="601" name="C++ lexical analyzer and parser" color="#8cb6ce" meeting="false" start="2019-06-03" duration="10" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+                    <depend id="583" type="2" difference="0" hardness="Strong"/>
+                    <depend id="585" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="590" name="Study and Demo UTF-8 encode in Bison" color="#8cb6ce" meeting="false" start="2019-05-09" duration="6" complete="100" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+                    <depend id="581" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="581" name="Study and Demo OS random generator" color="#8cb6ce" meeting="false" start="2019-05-17" duration="4" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="863" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="582" name="Look-Up Interface" meeting="false" start="2019-06-18" duration="6" complete="0" expand="false">
+                <depend id="589" type="2" difference="0" hardness="Strong"/>
+                <task id="583" name="Customized string replacement" color="#8cb6ce" meeting="false" start="2019-06-18" duration="6" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
+                <task id="585" name="Look-Up Interface repository building" color="#8cb6ce" meeting="false" start="2019-06-18" duration="6" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="570" name="Predefined Policies" color="#000000" meeting="false" start="2019-04-24" duration="9" complete="100" thirdDate="2019-04-24" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="true">
+                <depend id="602" type="2" difference="0" hardness="Strong"/>
+                <task id="48" name="Regular expression Policy Definition" color="#81a7c4" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-04-09" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                <task id="498" name="Credit card number data masking policy" color="#8cb6ce" meeting="false" start="2019-04-26" duration="7" complete="100" thirdDate="2019-05-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+                <task id="499" name="Email address data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-05-20" thirdDate-constraint="0" expand="true"/>
+                <task id="500" name="US national ID data masking policy - National ID (US)" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-05-22" thirdDate-constraint="0" expand="true"/>
+                <task id="11" name="Canada national ID data masking policy - National ID (CA)" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true"/>
+                <task id="13" name="French national ID data masking policy - National ID (FR)" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true"/>
+                <task id="501" name="Italy national ID data masking policy - National ID (IT)" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+                <task id="18" name="Date age data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-05-29" thirdDate-constraint="0" expand="true"/>
+                <task id="22" name="Repeatable replacement data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-05-31" thirdDate-constraint="0" expand="true"/>
+                <task id="26" name="Random replacement data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-06-10" thirdDate-constraint="0" expand="true"/>
+                <task id="502" name="Hash data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-06-12" thirdDate-constraint="0" expand="true"/>
+                <task id="503" name="Hash lookup data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-06-17" thirdDate-constraint="0" expand="true"/>
+                <task id="508" name="IP Address data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="7" complete="100" thirdDate="2019-07-31" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="31" name="Predefined Policy for Specified Regions" color="#000000" meeting="false" start="2019-04-24" duration="8" complete="100" thirdDate="2019-06-24" thirdDate-constraint="0" expand="false">
+                <task id="32" name="Hong Kong (HK) national ID data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="8" complete="100" thirdDate="2019-06-24" thirdDate-constraint="0" expand="true"/>
+                <task id="504" name="Street address data masking policy (HK)" color="#8cb6ce" meeting="false" start="2019-04-24" duration="8" complete="100" thirdDate="2019-07-08" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[This part might be tricky to do
+]]></notes>
+                </task>
+                <task id="505" name="Hong Kong Telephone Masking Policy (HK)" color="#8cb6ce" meeting="false" start="2019-04-24" duration="8" complete="100" thirdDate="2019-07-17" thirdDate-constraint="0" expand="true"/>
+                <task id="506" name="Taiwan(TW) national ID data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="8" complete="100" thirdDate="2019-07-18" thirdDate-constraint="0" expand="true"/>
+                <task id="42" name="Address data masking policy (TW)" color="#8cb6ce" meeting="false" start="2019-04-24" duration="8" complete="100" thirdDate="2019-07-19" thirdDate-constraint="0" expand="true"/>
+                <task id="507" name="Taiwanese Telephone Number data masking policy" color="#8cb6ce" meeting="false" start="2019-04-24" duration="8" complete="100" thirdDate="2019-07-26" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="861" name="Website" color="#81a7c4" meeting="false" start="2019-05-08" duration="5" complete="100" thirdDate="2019-05-08" thirdDate-constraint="0" expand="false">
+                <task id="862" name="Regular expression web UI" color="#81a7c4" meeting="false" start="2019-05-08" duration="5" complete="100" thirdDate="2019-05-15" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="863" name="Study PHP C++ RPC" color="#8cb6ce" meeting="false" start="2019-05-23" duration="7" complete="100" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+            <task id="867" name="Define Input/Output Interface" color="#8cb6ce" meeting="false" start="2019-05-20" duration="5" complete="100" thirdDate="2019-04-29" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Peter Cheng" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Olivia Lan" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Paul Hsieh" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Tim Don" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="Terry Zhuang" function="Default:0" contacts="" phone=""/>
+        <resource id="6" name="Aaron Wei" function="Default:0" contacts="" phone=""/>
+        <resource id="7" name="Will Hsu" function="Default:0" contacts="" phone=""/>
+        <resource id="8" name="Max Wang" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="9" name="Mark Chen" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="10" name="David Kang" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="11" name="Leo Chen" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="12" name="Hulk Yang" function="SoftwareDevelopment:2" contacts="hulkyang@taipay.com" phone=""/>
+        <resource id="13" name="Kay Lu" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="15" name="Lee Li" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="16" name="Betty Chen" function="Default:1" contacts="" phone=""/>
+        <resource id="19" name="Tako Chen" function="Default:1" contacts="" phone=""/>
+        <resource id="20" name="Aaron Wei" function="SoftwareDevelopment:10" contacts="" phone=""/>
+        <resource id="21" name="Phillip Wang" function="Default:0" contacts="" phone=""/>
+        <resource id="22" name="Phillip Wang" function="Default:0" contacts="" phone=""/>
+        <resource id="23" name="Billy Tseng" function="Default:0" contacts="" phone=""/>
+        <resource id="33" name="Hien Liu" function="SoftwareDevelopment:2" contacts="hienliu@taipay.com" phone=""/>
+        <resource id="34" name="Tony Lin" function="SoftwareDevelopment:2" contacts="tonylin@taipay.com" phone=""/>
+        <resource id="35" name="Johnny Lin" function="SoftwareDevelopment:2" contacts="johnnylin@taipay.com" phone=""/>
+        <resource id="36" name="Ken Liao" function="SoftwareDevelopment:2" contacts="kenliao@taipay.com" phone=""/>
+        <resource id="37" name="Alice Wang" function="SoftwareDevelopment:9" contacts="" phone=""/>
+        <resource id="38" name="Byone Wu" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="39" name="Ronald Garcia" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="40" name="David" function="Default:0" contacts="" phone=""/>
+        <resource id="41" name="Mark" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="48" resource-id="11" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="498" resource-id="11" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="862" resource-id="11" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="590" resource-id="15" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="581" resource-id="15" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="863" resource-id="15" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="601" resource-id="15" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="587" resource-id="23" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="583" resource-id="23" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="585" resource-id="23" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="579" resource-id="23" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="580" resource-id="23" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="573" resource-id="23" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="867" resource-id="23" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="499" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="500" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="501" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="502" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="503" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="508" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="504" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="505" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="506" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="42" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="507" resource-id="39" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2018-10-23" end="2018-10-27" resourceid="0"/>
+        <vacation start="2018-05-09" end="2018-05-10" resourceid="0"/>
+        <vacation start="2018-04-30" end="2018-05-01" resourceid="0"/>
+        <vacation start="2018-01-16" end="2018-01-20" resourceid="0"/>
+        <vacation start="2018-01-04" end="2018-01-05" resourceid="0"/>
+        <vacation start="2018-10-23" end="2018-10-27" resourceid="0"/>
+        <vacation start="2018-05-09" end="2018-05-10" resourceid="0"/>
+        <vacation start="2018-04-30" end="2018-05-01" resourceid="0"/>
+        <vacation start="2018-01-16" end="2018-01-20" resourceid="0"/>
+        <vacation start="2018-01-04" end="2018-01-05" resourceid="0"/>
+        <vacation start="2018-10-23" end="2018-10-27" resourceid="0"/>
+        <vacation start="2018-05-09" end="2018-05-10" resourceid="0"/>
+        <vacation start="2018-04-30" end="2018-05-01" resourceid="0"/>
+        <vacation start="2018-01-16" end="2018-01-20" resourceid="0"/>
+        <vacation start="2018-01-04" end="2018-01-05" resourceid="0"/>
+        <vacation start="2018-10-23" end="2018-10-27" resourceid="0"/>
+        <vacation start="2018-05-09" end="2018-05-10" resourceid="0"/>
+        <vacation start="2018-04-30" end="2018-05-01" resourceid="0"/>
+        <vacation start="2018-01-16" end="2018-01-20" resourceid="0"/>
+        <vacation start="2018-01-04" end="2018-01-05" resourceid="0"/>
+        <vacation start="2018-10-23" end="2018-10-27" resourceid="0"/>
+        <vacation start="2018-05-09" end="2018-05-10" resourceid="0"/>
+        <vacation start="2018-04-30" end="2018-05-01" resourceid="0"/>
+        <vacation start="2018-01-16" end="2018-01-20" resourceid="0"/>
+        <vacation start="2018-01-04" end="2018-01-05" resourceid="0"/>
+        <vacation start="2018-10-23" end="2018-10-27" resourceid="0"/>
+        <vacation start="2018-05-09" end="2018-05-10" resourceid="0"/>
+        <vacation start="2018-04-30" end="2018-05-01" resourceid="0"/>
+        <vacation start="2018-01-16" end="2018-01-20" resourceid="0"/>
+        <vacation start="2018-01-04" end="2018-01-05" resourceid="0"/>
+        <vacation start="2018-06-19" end="2018-06-20" resourceid="1"/>
+        <vacation start="2018-06-20" end="2018-06-23" resourceid="1"/>
+        <vacation start="2018-07-10" end="2018-07-11" resourceid="1"/>
+        <vacation start="2018-07-27" end="2018-07-28" resourceid="1"/>
+        <vacation start="2018-08-08" end="2018-08-09" resourceid="1"/>
+        <vacation start="2018-09-06" end="2018-09-08" resourceid="1"/>
+        <vacation start="2018-09-10" end="2018-09-11" resourceid="1"/>
+        <vacation start="2018-09-21" end="2018-09-22" resourceid="1"/>
+        <vacation start="2018-10-05" end="2018-10-06" resourceid="1"/>
+        <vacation start="2018-10-17" end="2018-10-18" resourceid="1"/>
+        <vacation start="2018-11-12" end="2018-11-13" resourceid="1"/>
+        <vacation start="2019-01-24" end="2019-01-25" resourceid="1"/>
+        <vacation start="2019-01-28" end="2019-01-29" resourceid="1"/>
+        <vacation start="2019-02-14" end="2019-02-16" resourceid="1"/>
+        <vacation start="2019-03-11" end="2019-03-12" resourceid="1"/>
+        <vacation start="2019-03-22" end="2019-03-23" resourceid="1"/>
+        <vacation start="2018-05-11" end="2018-05-12" resourceid="1"/>
+        <vacation start="2018-04-11" end="2018-04-13" resourceid="1"/>
+        <vacation start="2018-03-19" end="2018-03-20" resourceid="1"/>
+        <vacation start="2018-03-15" end="2018-03-16" resourceid="1"/>
+        <vacation start="2018-02-26" end="2018-02-27" resourceid="1"/>
+        <vacation start="2018-02-13" end="2018-02-14" resourceid="1"/>
+        <vacation start="2019-04-15" end="2019-04-16" resourceid="1"/>
+        <vacation start="2018-06-19" end="2018-06-20" resourceid="1"/>
+        <vacation start="2018-06-20" end="2018-06-23" resourceid="1"/>
+        <vacation start="2018-07-10" end="2018-07-11" resourceid="1"/>
+        <vacation start="2018-07-27" end="2018-07-28" resourceid="1"/>
+        <vacation start="2018-08-08" end="2018-08-09" resourceid="1"/>
+        <vacation start="2018-09-06" end="2018-09-08" resourceid="1"/>
+        <vacation start="2018-09-10" end="2018-09-11" resourceid="1"/>
+        <vacation start="2018-09-21" end="2018-09-22" resourceid="1"/>
+        <vacation start="2018-10-05" end="2018-10-06" resourceid="1"/>
+        <vacation start="2018-10-17" end="2018-10-18" resourceid="1"/>
+        <vacation start="2018-11-12" end="2018-11-13" resourceid="1"/>
+        <vacation start="2019-01-24" end="2019-01-25" resourceid="1"/>
+        <vacation start="2019-01-28" end="2019-01-29" resourceid="1"/>
+        <vacation start="2019-02-14" end="2019-02-16" resourceid="1"/>
+        <vacation start="2019-03-11" end="2019-03-12" resourceid="1"/>
+        <vacation start="2019-03-22" end="2019-03-23" resourceid="1"/>
+        <vacation start="2018-05-11" end="2018-05-12" resourceid="1"/>
+        <vacation start="2018-04-11" end="2018-04-13" resourceid="1"/>
+        <vacation start="2018-03-19" end="2018-03-20" resourceid="1"/>
+        <vacation start="2018-03-15" end="2018-03-16" resourceid="1"/>
+        <vacation start="2018-02-26" end="2018-02-27" resourceid="1"/>
+        <vacation start="2018-02-13" end="2018-02-14" resourceid="1"/>
+        <vacation start="2019-04-15" end="2019-04-16" resourceid="1"/>
+        <vacation start="2018-06-19" end="2018-06-20" resourceid="1"/>
+        <vacation start="2018-06-20" end="2018-06-23" resourceid="1"/>
+        <vacation start="2018-07-10" end="2018-07-11" resourceid="1"/>
+        <vacation start="2018-07-27" end="2018-07-28" resourceid="1"/>
+        <vacation start="2018-08-08" end="2018-08-09" resourceid="1"/>
+        <vacation start="2018-09-06" end="2018-09-08" resourceid="1"/>
+        <vacation start="2018-09-10" end="2018-09-11" resourceid="1"/>
+        <vacation start="2018-09-21" end="2018-09-22" resourceid="1"/>
+        <vacation start="2018-10-05" end="2018-10-06" resourceid="1"/>
+        <vacation start="2018-10-17" end="2018-10-18" resourceid="1"/>
+        <vacation start="2018-11-12" end="2018-11-13" resourceid="1"/>
+        <vacation start="2019-01-24" end="2019-01-25" resourceid="1"/>
+        <vacation start="2019-01-28" end="2019-01-29" resourceid="1"/>
+        <vacation start="2019-02-14" end="2019-02-16" resourceid="1"/>
+        <vacation start="2019-03-11" end="2019-03-12" resourceid="1"/>
+        <vacation start="2019-03-22" end="2019-03-23" resourceid="1"/>
+        <vacation start="2018-05-11" end="2018-05-12" resourceid="1"/>
+        <vacation start="2018-04-11" end="2018-04-13" resourceid="1"/>
+        <vacation start="2018-03-19" end="2018-03-20" resourceid="1"/>
+        <vacation start="2018-03-15" end="2018-03-16" resourceid="1"/>
+        <vacation start="2018-02-26" end="2018-02-27" resourceid="1"/>
+        <vacation start="2018-02-13" end="2018-02-14" resourceid="1"/>
+        <vacation start="2019-04-15" end="2019-04-16" resourceid="1"/>
+        <vacation start="2018-06-19" end="2018-06-20" resourceid="1"/>
+        <vacation start="2018-06-20" end="2018-06-23" resourceid="1"/>
+        <vacation start="2018-07-10" end="2018-07-11" resourceid="1"/>
+        <vacation start="2018-07-27" end="2018-07-28" resourceid="1"/>
+        <vacation start="2018-08-08" end="2018-08-09" resourceid="1"/>
+        <vacation start="2018-09-06" end="2018-09-08" resourceid="1"/>
+        <vacation start="2018-09-10" end="2018-09-11" resourceid="1"/>
+        <vacation start="2018-09-21" end="2018-09-22" resourceid="1"/>
+        <vacation start="2018-10-05" end="2018-10-06" resourceid="1"/>
+        <vacation start="2018-10-17" end="2018-10-18" resourceid="1"/>
+        <vacation start="2018-11-12" end="2018-11-13" resourceid="1"/>
+        <vacation start="2019-01-24" end="2019-01-25" resourceid="1"/>
+        <vacation start="2019-01-28" end="2019-01-29" resourceid="1"/>
+        <vacation start="2019-02-14" end="2019-02-16" resourceid="1"/>
+        <vacation start="2019-03-11" end="2019-03-12" resourceid="1"/>
+        <vacation start="2019-03-22" end="2019-03-23" resourceid="1"/>
+        <vacation start="2018-05-11" end="2018-05-12" resourceid="1"/>
+        <vacation start="2018-04-11" end="2018-04-13" resourceid="1"/>
+        <vacation start="2018-03-19" end="2018-03-20" resourceid="1"/>
+        <vacation start="2018-03-15" end="2018-03-16" resourceid="1"/>
+        <vacation start="2018-02-26" end="2018-02-27" resourceid="1"/>
+        <vacation start="2018-02-13" end="2018-02-14" resourceid="1"/>
+        <vacation start="2019-04-15" end="2019-04-16" resourceid="1"/>
+        <vacation start="2018-06-19" end="2018-06-20" resourceid="1"/>
+        <vacation start="2018-06-20" end="2018-06-23" resourceid="1"/>
+        <vacation start="2018-07-10" end="2018-07-11" resourceid="1"/>
+        <vacation start="2018-07-27" end="2018-07-28" resourceid="1"/>
+        <vacation start="2018-08-08" end="2018-08-09" resourceid="1"/>
+        <vacation start="2018-09-06" end="2018-09-08" resourceid="1"/>
+        <vacation start="2018-09-10" end="2018-09-11" resourceid="1"/>
+        <vacation start="2018-09-21" end="2018-09-22" resourceid="1"/>
+        <vacation start="2018-10-05" end="2018-10-06" resourceid="1"/>
+        <vacation start="2018-10-17" end="2018-10-18" resourceid="1"/>
+        <vacation start="2018-11-12" end="2018-11-13" resourceid="1"/>
+        <vacation start="2019-01-24" end="2019-01-25" resourceid="1"/>
+        <vacation start="2019-01-28" end="2019-01-29" resourceid="1"/>
+        <vacation start="2019-02-14" end="2019-02-16" resourceid="1"/>
+        <vacation start="2019-03-11" end="2019-03-12" resourceid="1"/>
+        <vacation start="2019-03-22" end="2019-03-23" resourceid="1"/>
+        <vacation start="2018-05-11" end="2018-05-12" resourceid="1"/>
+        <vacation start="2018-04-11" end="2018-04-13" resourceid="1"/>
+        <vacation start="2018-03-19" end="2018-03-20" resourceid="1"/>
+        <vacation start="2018-03-15" end="2018-03-16" resourceid="1"/>
+        <vacation start="2018-02-26" end="2018-02-27" resourceid="1"/>
+        <vacation start="2018-02-13" end="2018-02-14" resourceid="1"/>
+        <vacation start="2019-04-15" end="2019-04-16" resourceid="1"/>
+        <vacation start="2018-06-19" end="2018-06-20" resourceid="1"/>
+        <vacation start="2018-06-20" end="2018-06-23" resourceid="1"/>
+        <vacation start="2018-07-10" end="2018-07-11" resourceid="1"/>
+        <vacation start="2018-07-27" end="2018-07-28" resourceid="1"/>
+        <vacation start="2018-08-08" end="2018-08-09" resourceid="1"/>
+        <vacation start="2018-09-06" end="2018-09-08" resourceid="1"/>
+        <vacation start="2018-09-10" end="2018-09-11" resourceid="1"/>
+        <vacation start="2018-09-21" end="2018-09-22" resourceid="1"/>
+        <vacation start="2018-10-05" end="2018-10-06" resourceid="1"/>
+        <vacation start="2018-10-17" end="2018-10-18" resourceid="1"/>
+        <vacation start="2018-11-12" end="2018-11-13" resourceid="1"/>
+        <vacation start="2019-01-24" end="2019-01-25" resourceid="1"/>
+        <vacation start="2019-01-28" end="2019-01-29" resourceid="1"/>
+        <vacation start="2019-02-14" end="2019-02-16" resourceid="1"/>
+        <vacation start="2019-03-11" end="2019-03-12" resourceid="1"/>
+        <vacation start="2019-03-22" end="2019-03-23" resourceid="1"/>
+        <vacation start="2018-05-11" end="2018-05-12" resourceid="1"/>
+        <vacation start="2018-04-11" end="2018-04-13" resourceid="1"/>
+        <vacation start="2018-03-19" end="2018-03-20" resourceid="1"/>
+        <vacation start="2018-03-15" end="2018-03-16" resourceid="1"/>
+        <vacation start="2018-02-26" end="2018-02-27" resourceid="1"/>
+        <vacation start="2018-02-13" end="2018-02-14" resourceid="1"/>
+        <vacation start="2019-04-15" end="2019-04-16" resourceid="1"/>
+        <vacation start="2018-08-28" end="2018-08-29" resourceid="3"/>
+        <vacation start="2019-03-25" end="2019-03-26" resourceid="3"/>
+        <vacation start="2018-12-18" end="2018-12-19" resourceid="3"/>
+        <vacation start="2019-02-11" end="2019-02-12" resourceid="3"/>
+        <vacation start="2018-08-28" end="2018-08-29" resourceid="3"/>
+        <vacation start="2019-03-25" end="2019-03-26" resourceid="3"/>
+        <vacation start="2018-12-18" end="2018-12-19" resourceid="3"/>
+        <vacation start="2019-02-11" end="2019-02-12" resourceid="3"/>
+        <vacation start="2018-08-28" end="2018-08-29" resourceid="3"/>
+        <vacation start="2019-03-25" end="2019-03-26" resourceid="3"/>
+        <vacation start="2018-12-18" end="2018-12-19" resourceid="3"/>
+        <vacation start="2019-02-11" end="2019-02-12" resourceid="3"/>
+        <vacation start="2018-08-28" end="2018-08-29" resourceid="3"/>
+        <vacation start="2019-03-25" end="2019-03-26" resourceid="3"/>
+        <vacation start="2018-12-18" end="2018-12-19" resourceid="3"/>
+        <vacation start="2019-02-11" end="2019-02-12" resourceid="3"/>
+        <vacation start="2018-08-28" end="2018-08-29" resourceid="3"/>
+        <vacation start="2019-03-25" end="2019-03-26" resourceid="3"/>
+        <vacation start="2018-12-18" end="2018-12-19" resourceid="3"/>
+        <vacation start="2019-02-11" end="2019-02-12" resourceid="3"/>
+        <vacation start="2018-08-28" end="2018-08-29" resourceid="3"/>
+        <vacation start="2019-03-25" end="2019-03-26" resourceid="3"/>
+        <vacation start="2018-12-18" end="2018-12-19" resourceid="3"/>
+        <vacation start="2019-02-11" end="2019-02-12" resourceid="3"/>
+        <vacation start="2018-08-17" end="2018-08-18" resourceid="12"/>
+        <vacation start="2018-09-07" end="2018-09-08" resourceid="12"/>
+        <vacation start="2018-05-17" end="2018-05-19" resourceid="12"/>
+        <vacation start="2018-08-17" end="2018-08-18" resourceid="12"/>
+        <vacation start="2018-09-07" end="2018-09-08" resourceid="12"/>
+        <vacation start="2018-05-17" end="2018-05-19" resourceid="12"/>
+        <vacation start="2018-08-17" end="2018-08-18" resourceid="12"/>
+        <vacation start="2018-09-07" end="2018-09-08" resourceid="12"/>
+        <vacation start="2018-05-17" end="2018-05-19" resourceid="12"/>
+        <vacation start="2018-08-17" end="2018-08-18" resourceid="12"/>
+        <vacation start="2018-09-07" end="2018-09-08" resourceid="12"/>
+        <vacation start="2018-05-17" end="2018-05-19" resourceid="12"/>
+        <vacation start="2018-10-23" end="2018-10-27" resourceid="33"/>
+        <vacation start="2018-05-09" end="2018-05-10" resourceid="33"/>
+        <vacation start="2018-04-30" end="2018-05-01" resourceid="33"/>
+        <vacation start="2018-01-16" end="2018-01-20" resourceid="33"/>
+        <vacation start="2018-01-04" end="2018-01-05" resourceid="33"/>
+        <vacation start="2018-06-19" end="2018-06-20" resourceid="34"/>
+        <vacation start="2018-06-20" end="2018-06-23" resourceid="34"/>
+        <vacation start="2018-07-10" end="2018-07-11" resourceid="34"/>
+        <vacation start="2018-07-27" end="2018-07-28" resourceid="34"/>
+        <vacation start="2018-08-08" end="2018-08-09" resourceid="34"/>
+        <vacation start="2018-09-06" end="2018-09-08" resourceid="34"/>
+        <vacation start="2018-09-10" end="2018-09-11" resourceid="34"/>
+        <vacation start="2018-09-21" end="2018-09-22" resourceid="34"/>
+        <vacation start="2018-10-05" end="2018-10-06" resourceid="34"/>
+        <vacation start="2018-10-17" end="2018-10-18" resourceid="34"/>
+        <vacation start="2018-11-12" end="2018-11-13" resourceid="34"/>
+        <vacation start="2019-01-24" end="2019-01-25" resourceid="34"/>
+        <vacation start="2019-01-28" end="2019-01-29" resourceid="34"/>
+        <vacation start="2019-02-14" end="2019-02-16" resourceid="34"/>
+        <vacation start="2019-03-11" end="2019-03-12" resourceid="34"/>
+        <vacation start="2019-03-22" end="2019-03-23" resourceid="34"/>
+        <vacation start="2018-05-11" end="2018-05-12" resourceid="34"/>
+        <vacation start="2018-04-11" end="2018-04-13" resourceid="34"/>
+        <vacation start="2018-03-19" end="2018-03-20" resourceid="34"/>
+        <vacation start="2018-03-15" end="2018-03-16" resourceid="34"/>
+        <vacation start="2018-02-26" end="2018-02-27" resourceid="34"/>
+        <vacation start="2018-02-13" end="2018-02-14" resourceid="34"/>
+        <vacation start="2019-04-15" end="2019-04-16" resourceid="34"/>
+        <vacation start="2018-08-28" end="2018-08-29" resourceid="36"/>
+        <vacation start="2019-03-25" end="2019-03-26" resourceid="36"/>
+        <vacation start="2018-12-18" end="2018-12-19" resourceid="36"/>
+        <vacation start="2019-02-11" end="2019-02-12" resourceid="36"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="UI"/>
+        <role id="2" name="開發人員"/>
+    </roles>
+</project>
